@@ -1,0 +1,149 @@
+/* src/component/styles/Header.css */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  color: white;
+  background: transparent;
+}
+.logo-img{
+  height:150px;
+  width: 160px;
+  
+}
+/* Logo Container with Mountain Icon */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  /* align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  border: 2px solid rgba(173, 216, 230, 0.8);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); */
+}
+
+.mountain-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+}
+
+.logo-tagline {
+  font-size: 0.55em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* User Toggle (Buyer/Seller) */
+.user-toggle {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  padding: 4px;
+  display: flex;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.toggle-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9em;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 3%;
+    flex-wrap: wrap;
+  }
+
+  .logo-wrapper {
+    padding: 6px 12px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-btn {
+    padding: 8px 15px;
+    font-size: 0.85em;
+  }
+
+  .toggle-btn {
+    padding: 6px 15px;
+    font-size: 0.85em;
+  }
+}

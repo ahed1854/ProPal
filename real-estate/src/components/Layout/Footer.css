@@ -1,0 +1,329 @@
+.main-footer {
+    background: rgba(31, 64, 69, 0.9);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 20px;
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.footer-map-section {
+    flex: 1;
+}
+
+.footer-map-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.footer-map-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(127, 148, 146, 0.8), rgba(127, 148, 146, 0.4));
+    border-radius: 2px;
+}
+
+.footer-map-container {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(127, 148, 146, 0.8), rgba(127, 148, 146, 0.4));
+    border-radius: 2px;
+}
+
+.footer-link:hover .footer-title::after {
+    background: linear-gradient(90deg, rgba(127, 148, 146, 1), rgba(127, 148, 146, 0.6));
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 1);
+}
+
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-description a {
+    text-decoration: none;
+    color: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 25px 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-main-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-map-section {
+        text-align: center;
+    }
+
+    .footer-title,
+    .footer-map-title {
+        font-size: 1.3rem;
+    }
+
+    .footer-map-container {
+        height: 200px;
+    }
+
+    .footer-map-container iframe {
+        height: 200px !important;
+    }
+
+    .footer-social {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+.team-name {
+    text-align: center;
+    color: #ffff;
+}
+
+/* ----------------------------------------------------------------- */
+
+/* Team Page Styles */
+.team-page {
+    min-height: 100vh;
+}
+
+.team-section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.team-section-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.team-member-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.team-member-image {
+    margin-bottom: 1.5rem;
+}
+
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1f4045 0%, #7f9492 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-member-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fffffff2;
+    margin-bottom: 0.5rem;
+}
+
+.member-role {
+    font-size: 1.1rem;
+    color: #cfcfcff2;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.member-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section-title {
+        font-size: 2rem;
+    }
+
+    .team-section-description {
+        font-size: 1rem;
+    }
+
+    .member-avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+    }
+
+    .member-name {
+        font-size: 1.2rem;
+    }
+
+    .member-role {
+        font-size: 1rem;
+    }
+
+    .values-title {
+        font-size: 1.5rem;
+    }
+
+    .value-icon {
+        font-size: 2rem;
+    }
+}
+
+/* ----------------------------------------------------------------- */

@@ -1,0 +1,286 @@
+/* Add Property Page - Dark Teal Design */
+.add-property-page {
+    min-height: 100vh;
+    /* background: #7f949289; */
+    padding: 150px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.add-property-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.add-property-title {
+    text-align: center;
+    color: #f4f6f6;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.add-property-card {
+    background: #1f4045;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.add-property-form {
+    width: 100%;
+}
+
+.form-row-add {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group-add {
+    margin-bottom: 20px;
+}
+
+.form-label-add {
+    display: block;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-control-add {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(200, 200, 200, 0.3);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control-add::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-control-add:focus {
+    outline: none;
+    background: rgba(200, 200, 200, 0.4);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.form-control-add option {
+    background: #1f4045;
+    color: white;
+}
+
+/* Transaction Type Radio Buttons */
+.transaction-type-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radio-input {
+    width: 20px;
+    height: 20px;
+    accent-color: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+.radio-label {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Price Input with $ Symbol */
+.price-input-wrapper {
+    position: relative;
+}
+
+.price-symbol {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.price-input {
+    padding-right: 40px;
+}
+
+/* Textarea */
+.textarea-add {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Address Row */
+.address-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Property Details Row */
+.details-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Add Photo Section */
+.add-photo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(200, 200, 200, 0.2);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-photo-section:hover {
+    background: rgba(200, 200, 200, 0.25);
+}
+
+.add-photo-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.add-photo-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200, 200, 200, 0.3);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.5rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-cancel {
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(200, 200, 200, 0.3);
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.btn-cancel:hover {
+    background: rgba(200, 200, 200, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-add {
+    padding: 12px 30px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(200, 200, 200, 0.4);
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.btn-add:hover:not(:disabled) {
+    background: rgba(200, 200, 200, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-add:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Error Alert */
+.alert-danger-add {
+    background: rgba(220, 53, 69, 0.2);
+    border: 1px solid rgba(220, 53, 69, 0.4);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.action-buttons button {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-property-page {
+        padding: 20px 15px;
+    }
+
+    .add-property-card {
+        padding: 25px 20px;
+    }
+
+    .add-property-title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .form-row-add,
+    .address-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .details-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn-cancel,
+    .btn-add {
+        width: 100%;
+    }
+}
